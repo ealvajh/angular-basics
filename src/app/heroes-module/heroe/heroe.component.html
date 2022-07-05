@@ -1,0 +1,26 @@
+<h1> Heroe component works! </h1>
+
+<div>
+    <dl>
+        <td>Name: </td>
+        <dd> {{ name }}</dd>
+
+        <td>Age: </td>
+        <dd> {{ age }}</dd>
+
+        <td>Function: </td>
+        <dd> {{ getName() }}</dd>
+
+        <td>Capitalized name: </td>
+        <dd> {{ capitalizeName }}</dd>
+    </dl>
+
+    <!-- Actualización del DOM -->
+    <button (click)="changeName()">
+        Change name
+    </button>
+
+    <button (click)="changeAge()">
+        Change age
+    </button>
+</div>
