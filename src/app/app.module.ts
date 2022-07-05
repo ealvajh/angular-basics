@@ -2,23 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
-// Importando mi component
-import { CounterComponent } from './counter-module/counter.component';
-import { HeroeComponent } from './heroes-module/heroe/heroe.component';
-import { ListComponent } from './heroes-module/list/list.component';
+// Importando mis modulos
+import { CounterModule } from './counter-module/counter.module';
+import { HeroesModule } from './heroes-module/heroes-module.module';
 
 @NgModule({
   // --> Se importan components.
   declarations: [
     AppComponent,
     // Mis components
-    CounterComponent,
-    HeroeComponent,
-    ListComponent
+    //CounterComponent,
+    //HeroesModule
   ],
   // --> Se importan modulos.
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    CounterModule
   ],
   providers: [], // Relacionados con servicios a un modulo.
   bootstrap: [AppComponent] // Component principal
